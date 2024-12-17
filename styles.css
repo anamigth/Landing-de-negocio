@@ -6,6 +6,12 @@ body {
     box-sizing: border-box;
 }
 
+body, header, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a{
     text-align: none;
     color: inherit;
@@ -26,7 +32,7 @@ header {
 
 .logo img {
     width: 80px;
-    padding: auto;
+    padding: 10px;
     border-radius: 21px;
 }    
 
@@ -103,3 +109,89 @@ nav ul li a:hover {
     background-color: #00000080;
     border-radius: 5px;
 }
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,#ff3131,#2e1a0e, #000000);
+    color: #ffffff;
+    padding: 50px 80px;
+    gap: 30px;
+    margin: 10;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-text h1 {
+    font-family: cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.hero-text small {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+.hero-text form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.hero-text input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.hero-text button {
+    background-color: #cd2525;
+    color: white;
+    font-weight: bold;
+}
+
+.hero-text a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-text a:hover {
+    color: #ffffff;
+}
+
+.hero-text img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
