@@ -195,3 +195,73 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.catalogo {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.catalogo h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: #1d1825;
+    margin-top: 5px;
+}
+
+.catalogo p {
+    font-size: 20px;
+    color: #a6a6a6;
+    margin-bottom: 30px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.producto1, .producto2, .producto3 {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: #edecea;
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto1:hover, .producto2:hover, .producto3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.producto1 img, .producto2 img, .producto3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.producto1 h3, .producto2 h3, .producto3 h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    color: #1d1825;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.producto1 p, .producto2 p, .producto3 p {
+    font-weight: bold;
+    color: #ac374f;
+    margin-bottom: 5px;
+}
+
+.producto1 .old-price, .producto2 .old-price, .producto3 .old-price{
+    color: #a6a6a6;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
