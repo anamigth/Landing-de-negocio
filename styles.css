@@ -423,3 +423,51 @@ button img:hover {
     font-size: 15px;
     color: #ffd1d1;
 }
+
+footer {
+    background: linear-gradient(to top,#ff3131,#ff914d);
+    color: white;
+    width: 100%;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #1d1825;
+}
+
+    .footer-links a {
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 0.3s;
+}
+
+    .footer-links a:hover {
+        color: #ffd1d1;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-social a img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-copyright p {
+    font-size: 15px;
+}
