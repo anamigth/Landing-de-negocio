@@ -106,7 +106,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00000080;
+    background-color: #0000005d;
     border-radius: 5px;
 }
 
@@ -265,3 +265,89 @@ nav ul li a:hover {
     margin-left: 10px;
 }
 
+.marcas {
+    background-image: url(imágenes/adicional1.webp);
+    background-color: #00000094;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+}
+
+.marcas::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.marcas h2 {
+    color: #ffffff;
+    font-size: 35px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.marcas-container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.marcas-logos {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 30px;
+    padding: 50px;
+}
+
+.marcas-logos  a img{
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 40px 6px rgba(0, 0, 0, 0.2));
+}
+
+.marcas-logos a img:hover {
+    transform: scale(1.1);
+}
+
+.marcas-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prevButton {
+    left: 0;
+}
+
+#nextButton {
+    right: 0;
+}
+
+button img {
+    width: 70px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+button img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
