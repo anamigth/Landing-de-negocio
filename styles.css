@@ -351,3 +351,75 @@ button img:hover {
     opacity: 1;
     transform: scale(1.2);
 }
+
+.personalizables {
+    background: linear-gradient(to right,#ac374f, #7c3180, #e15916);
+    color: white;
+    padding: 50px 10%;
+}
+
+.perso-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.perso-image img {
+    width:600px;
+    height: auto;
+    border-radius: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.perso-text {
+    flex: 1;
+    text-align: center;
+    padding-left: 60px;
+}
+
+.perso-text h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.perso-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.custom-button {
+    background-color: #cd2525;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+.custom-button img {
+    width: 20px;
+    height: auto;
+}
+
+.custom-button:hover {
+    background-color: #c73e15;
+}
+
+.perso-text small{
+    display: flex;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 15px;
+    color: #ffd1d1;
+}
