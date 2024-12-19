@@ -295,6 +295,7 @@ nav ul li a:hover {
     padding: 20px;
     margin-bottom: 20px;
     font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.274);
 }
 
 .marcas-container {
@@ -402,7 +403,7 @@ button img:hover {
     border: none;
     padding: 10px 20px;
     font-size: 20px;
-    display: flex;
+    display: inline-block;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
@@ -421,11 +422,13 @@ button img:hover {
 }
 
 .perso-text small{
-    display: flex;
+    display: inline-block;
     margin-top: 10px;
     font-style: italic;
     font-size: 15px;
+    font-weight: bold;
     color: #ffd1d1;
+    padding-top: 20px;
 }
 
 footer {
