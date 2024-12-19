@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #444;
     margin: 0;
     padding: 0;
@@ -268,7 +268,7 @@ nav ul li a:hover {
 }
 
 .marcas {
-    background-image: url(imágenes/adicional1.webp);
+    background-image: linear-gradient(rgba(156, 150, 150, 0.5), rgba(156, 150, 150, 0.5)), url(imágenes/adicional1.webp);
     background-color: #00000094;
     background-position: center;
     background-repeat: no-repeat;
