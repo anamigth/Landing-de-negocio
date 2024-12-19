@@ -127,7 +127,7 @@ nav ul li a:hover {
     flex: 1;
     max-width: 50%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+}    
 
 .hero-text h1 {
     font-family: cursive;
@@ -156,6 +156,7 @@ nav ul li a:hover {
 
 .hero-text form {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 15px;
 }
