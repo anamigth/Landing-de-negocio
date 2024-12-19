@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
     color: #444;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body, header, h1, h2, h3, p, ul {
 }
 
 a{
-    text-align: none;
+    text-decoration: none;
     color: inherit;
 }
 
@@ -113,6 +113,7 @@ nav ul li a:hover {
 
 .hero {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right,#ff3131,#2e1a0e, #000000);
@@ -189,10 +190,11 @@ nav ul li a:hover {
 }
 
 .hero-image {
-    flex: 1;
+    width: 600´px;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
 }
 
 .catalogo {
@@ -360,6 +362,7 @@ button img:hover {
 
 .perso-content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -375,7 +378,8 @@ button img:hover {
 .perso-text {
     flex: 1;
     text-align: center;
-    padding-left: 60px;
+    padding: 10px;
+    word-wrap: break-word;
 }
 
 .perso-text h2 {
@@ -428,8 +432,11 @@ footer {
     background: linear-gradient(to top,#ff3131,#ff914d);
     color: white;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px 10px;
     text-align: center;
+    overflow: hidden;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .footer-links {
@@ -454,12 +461,12 @@ footer {
 .footer-social {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
 .footer-social a img {
-    width: 50px;
+    width: 40px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -469,5 +476,89 @@ footer {
 }
 
 .footer-copyright p {
-    font-size: 15px;
+    font-size: 10px;
+}
+
+/* Estilos para móviles (menor o igual a 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .catalogo h2 {
+        font-size: 30px;
+    }
+
+    .productos {
+        flex-direction: column;
+    }
+
+    .producto1, .producto2, .producto3 {
+        max-width: 100%;
+    }
+
+    .marcas-logos a img {
+        width: 100px;
+    }
+
+    .perso-content {
+        flex-direction: column;
+    }
+
+    .perso-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-social {
+        gap: 5px;
+    }
 }
